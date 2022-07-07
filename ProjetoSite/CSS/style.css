@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none; /* excluir as bordas */
+    outline: none;
+    font-weight: 300; /*intensidade do negrito*/
+    box-sizing: border-box; /* janela do browser é uma janela,entao se mantem dentro dela */
+    font-family: 'Lato' , sans-serif; /* ficar tudo com o mesmo tipo de letra */
+}
+
+body{   /* cor de fundo */
+    background-color: #F5F5F5; /* corresponde as cores RGB a cada dois é uma letra, no word ele dar os codigos das cores*/      
+}
+/* tirar o sublinhado*/
+a{
+    text-decoration: none;
+}
+/* ocultar os pontinhos dos menus*/
+ul{
+    list-style: none;
+}
+/*por imagens*/
+img{
+    max-width: 100%;
+}
+/* CABEÇALHO */
+.cabeçalho{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    
+}
+.logo{
+    width: 56px;
+    height: 56px;
+    float: left;
+    font-size: 0;
+    background: url(../img/logo-mobile.png)center center/56px;
+}
+.btn-menu{
+    width: 56px;
+    height: 56px;
+    float: right;
+    background: linear-gradient(to right, #CE2E3C, #DA6709);
+    color: #FFFFFF;
+    border-radius: 56px;
+}
+/* MENU */
+.menu{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;   
+}
+.btn-close{
+    color: #FFFFFF;
+    font-size: 24px;
+    float: right;
+    margin: 2% 3% 0 0;
+    cursor: pointer;
+}
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.menu li{
+    padding: 1.5%;
+}
+.menu li a{
+    font-size: 32px;
+    color: #FFFFFF;
+    padding: 1.5% 3%;
+}
+.menu li a:hover{
+    border: 1px solid #DA6709;
+}
+/* BANNER */
+.banner{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 4%;
+    background: url(../img/bg.jpg)no-repeat fixed;
+}
+.title{
+    width: 100%;
+}
+.title h2{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 40px;
+}
+.title h3{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.button{
+    width: 100%;
+    margin-top: 2%;
+}
+.button i{
+    float: right ;
+}
+.btn-registar{
+    width: 100%;
+    font-size: 24px;
+    text-align: left;
+    cursor: pointer;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #130400;
+}
+.btn-sobre{
+    width: 100%;
+    font-size: 24px;
+    text-align: left;
+    cursor: pointer;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #130400;
+    color: #FFFFFF;
+    margin-top: 2%;
+}
+/* SERVIÇOS */
+.serviços{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+}
+.serviço{
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 3%;
+}
+.serviço img{
+    border-radius: 7px 7px 0 0;
+}
+.inner{
+    padding: 7%;
+}
+.inner a{
+    font-size: 24px;
+    color: #130400;
+    font-weight: 700;
+}
+.inner h4{
+    font-size: 19.2px;
+    color: #130400;
+    margin-top: 2%;   
+}
+.inner p{
+    color: #130400;
+    line-height: 24px;
+    margin-top: 6%;
+}
+/* NEWSLETTER */
+.newsletter{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 4%;
+    background-color: #130400;
+}
+.newsletter h2{
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.newsletter h3{
+    color: #FFFFFF;
+}
+.newsletter input{
+    width: 100%;
+    background-color: #130400;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5%;
+    border-radius: 5px;
+}
+.newsletter button{
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #130400;
+    cursor: pointer;
+    padding: 5%;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+/* RODAPE */
+.rodape{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+    background: linear-gradient(to right, #CE2E3C, #DA6709);
+  
+}
+.social-icons a{
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 3%;
+}
+.social-icons a:hover{
+    color: rgb(255, 255, 255);
+}
+.social-icons a:last-child{
+    margin-right: 0;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 2%;
+}
+/* MOBILE FIRST */
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px) {
+    .logo{
+        width: 214px;
+        background: url(../img/logo.png)center center/214px;
+    }   
+}
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px){
+    .serviço{
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+    }
+    .serviço:nth-child(2){
+        margin-right: 0;
+    }
+    .newsletter h2{
+        font-size: 32px;
+    }
+    .newsletter h3{
+        font-size: 24px;
+    }
+    .newsletter input{
+        width: 70%;
+        padding: 2%;
+        float: left;
+        margin-right: 1%;
+    }
+    .newsletter button{
+        width: 29%;
+        padding: 2%;
+        float: right;
+        margin-top: 0;
+    }
+}
+/* MEDIUM DEVICES - TABLES & DESKTOPS */
+@media screen and (min-width: 960px){
+    .title{
+        width: 70%;
+        float: left;
+        text-align: left;
+    }
+    .title h2{
+        font-size: 48px;
+    }
+    .title h3{
+        font-size: 32px;
+    }
+    .button{
+        width: 30%;
+        float: right;
+        margin-top: 0;
+    }
+    .serviço{
+        width: 31%;
+    }
+    .serviço:nth-child(2){
+        margin-right: 2%;
+    }
+    .serviço:nth-child(3){
+        margin-right: 0;
+    }
+    .newsletter input{
+        width: 60%;
+        float: none;
+    }
+    .newsletter bottom{
+        width: 20%;
+        float: none;
+    }
+
+}
+/* LARGE DEVICES - WIDE SCREENS */
+@media screen and ( min-width: 1280px) {
+    .btn-menu{
+        display: none;      
+    }
+    .btn-close{
+        display: none;
+    }
+    .menu{
+        width: auto;
+        height: 56px;
+        line-height: 56px;
+        float: right;
+        background-color: #F5F5F5;
+        display: block! important;
+        position: static;
+    }
+    .menu li{
+        padding: 0;
+        float: left;
+    }
+    .menu li a{
+        color: #130400;
+        font-size: 16px;
+        padding: 15px;
+    }
+    .menu li a:hover{
+        border: none;
+        color: #DA6709;
+    }
+}
